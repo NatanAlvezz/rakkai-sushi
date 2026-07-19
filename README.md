@@ -1,49 +1,41 @@
 # DAKKAI Sushi — site oficial
 
-Site estático premium, responsivo e instalável como aplicativo (PWA), pronto para GitHub e Vercel.
+Site institucional estático do **DAKKAI Sushi — Brasil • Oriente**.
 
-## Estrutura
+## Estrutura correta
 
-- `index.html` — página principal.
-- `styles.css` — identidade visual e responsividade.
-- `script.js` — menu, animações, links e instalação PWA.
-- `config.js` — único arquivo que precisa receber os dados oficiais.
-- `manifest.webmanifest` e `sw.js` — permitem instalar o site no celular.
-- `assets/` — logo vetorial, favicon e ícones.
-
-## Antes de publicar
-
-Abra `config.js` e preencha:
-
-- WhatsApp: país + DDD + número, somente números.
-- Instagram.
-- Delivery.
-- Cardápio.
-- Reservas.
-- Trabalhe conosco.
-- Google Maps.
-- Endereço, horário e forma de atendimento.
-
-Quando um link estiver vazio, o site não envia o cliente para um contato falso: mostra um aviso de configuração.
-
-## Publicar no GitHub
-
-```bash
-git init
-git add .
-git commit -m "publica site oficial DAKKAI Sushi"
-git branch -M main
-git remote add origin URL_DO_REPOSITORIO
-git push -u origin main
+```text
+/
+├── index.html
+├── styles.css
+├── script.js
+├── config.js
+├── manifest.webmanifest
+├── sw.js
+├── .gitignore
+└── assets/
+    ├── logo-dakkai.png
+    ├── logo-dakkai.webp
+    ├── og-dakkai.jpg
+    ├── favicon-64.png
+    ├── icon-192.png
+    ├── icon-512.png
+    ├── dakkai-hero-oficial.webp
+    ├── dakkai-hero-oficial-mobile.webp
+    ├── dakkai-experiencia-oficial.webp
+    ├── dakkai-experiencia-oficial-mobile.webp
+    ├── dakkai-galeria-sushi-mar.jpg
+    ├── dakkai-galeria-sushi-mar.webp
+    ├── dakkai-galeria-prato-quente.jpg
+    └── dakkai-galeria-prato-quente.webp
 ```
 
-## Publicar na Vercel
+## Configuração
 
-1. Acesse a Vercel.
-2. Clique em **Add New > Project**.
-3. Importe o repositório do DAKKAI.
-4. Use **Framework Preset: Other**.
-5. Não preencha Build Command.
-6. Clique em **Deploy**.
+Todos os contatos ficam em `config.js`. Preencha WhatsApp, Instagram, delivery, cardápio, reservas, Google Maps, endereço e horário.
 
-Depois disso, cada `git push` cria uma atualização automática.
+## Publicação
+
+Este projeto não precisa de instalação, npm ou comando de build. Na Vercel use **Framework Preset: Other** e mantenha os campos de build vazios.
+
+Não envie arquivos ZIP para a raiz do repositório. Extraia o pacote e envie os arquivos e a pasta `assets`.

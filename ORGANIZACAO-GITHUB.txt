@@ -1,0 +1,28 @@
+DAKKAI SUSHI — ORGANIZAÇÃO FINAL DO GITHUB
+
+NA RAIZ, DEIXE SOMENTE:
+- index.html
+- styles.css
+- script.js
+- config.js
+- manifest.webmanifest
+- sw.js
+- README.md
+- .gitignore
+- pasta assets
+
+PODE APAGAR DO GITHUB:
+- arquivos .zip
+- arquivos .sha256
+- prévias dakkai-desktop-preview*.png
+- prévias dakkai-mobile-preview*.png
+- ATUALIZAR-LOGO-NO-GITHUB.txt
+- ATUALIZAR-FOTOS-OFICIAIS-NO-GITHUB.txt
+- VERCEL-PASSO-A-PASSO.txt antigo
+- hero-art.svg
+- experience-art.svg
+- fotos originais duplicadas que não são chamadas pelo site
+- logo antiga em SVG
+
+IMPORTANTE:
+A pasta assets precisa ficar aberta como pasta na raiz do repositório. Não coloque os arquivos do site dentro de uma subpasta adicional.
