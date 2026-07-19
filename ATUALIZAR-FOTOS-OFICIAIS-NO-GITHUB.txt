@@ -1,0 +1,35 @@
+DAKKAI SUSHI — FOTOS OFICIAIS APLICADAS
+
+As duas fotos enviadas foram aplicadas da seguinte forma:
+
+1. Foto do sushi com vista para o mar
+   - fundo principal do site;
+   - versão exclusiva para celular;
+   - galeria oficial;
+   - imagem de compartilhamento em WhatsApp e redes sociais.
+
+2. Foto do prato quente
+   - seção Experiência;
+   - versão exclusiva para celular;
+   - galeria oficial.
+
+Também foram atualizados:
+- alinhamento no computador e no celular;
+- carregamento otimizado em WebP;
+- texto alternativo para acessibilidade;
+- cache do navegador;
+- prévia social;
+- nova seção DAKKAI Oficial.
+
+COMO ATUALIZAR O GITHUB
+
+1. Extraia o ZIP de atualização.
+2. Abra o repositório do DAKKAI no GitHub.
+3. Clique em Add file > Upload files.
+4. Envie todos os arquivos e confirme a substituição.
+5. Clique em Commit changes.
+6. Aguarde o deploy da Vercel.
+7. No computador, pressione Ctrl + F5 para limpar a versão antiga.
+
+Commit sugerido:
+Aplica fotos oficiais do DAKKAI em todo o site

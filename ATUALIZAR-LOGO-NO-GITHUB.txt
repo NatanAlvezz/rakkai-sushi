@@ -1,0 +1,23 @@
+DAKKAI SUSHI — ATUALIZAÇÃO DA LOGO APROVADA
+
+A logo enviada foi aplicada sem redesenhar:
+- fundo preto removido apenas para integração limpa no site;
+- proporção preservada;
+- alinhamento central corrigido no computador e celular;
+- rodapé, compartilhamento, favicon e ícones atualizados;
+- cache do site atualizado para evitar que a logo antiga continue aparecendo.
+
+PARA ATUALIZAR O GITHUB
+1. Abra o repositório do DAKKAI.
+2. Clique em Add file > Upload files.
+3. Arraste TODO o conteúdo desta pasta, inclusive a pasta assets.
+4. Quando o GitHub perguntar sobre arquivos iguais, confirme a substituição.
+5. Clique em Commit changes.
+6. Aguarde o deploy automático da Vercel.
+
+IMPORTANTE
+Depois do deploy, abra o site e pressione:
+Windows: Ctrl + F5
+Celular: feche a aba e abra novamente.
+
+Não use mais os arquivos antigos logo-dakkai.svg ou favicon.svg.
