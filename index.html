@@ -2,155 +2,563 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="DAKKAI Sushi — Brasil e Oriente em uma experiência japonesa autoral, elegante e contemporânea.">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="DAKKAI Sushi — Brasil e Oriente em uma experiência japonesa autoral, elegante e contemporânea."
+  >
+
   <meta name="theme-color" content="#070707">
   <meta name="color-scheme" content="dark">
+
   <meta property="og:type" content="website">
   <meta property="og:title" content="DAKKAI Sushi | Brasil • Oriente">
-  <meta property="og:description" content="Sushi autoral, ingredientes selecionados e uma experiência que une Brasil e Oriente.">
+  <meta
+    property="og:description"
+    content="Sushi autoral, ingredientes selecionados e uma experiência que une Brasil e Oriente."
+  >
   <meta property="og:image" content="assets/og-dakkai.jpg">
+
   <meta name="twitter:card" content="summary_large_image">
+
   <title>DAKKAI Sushi | Brasil • Oriente</title>
 
-  <link rel="icon" href="assets/favicon-64.png" type="image/png" sizes="64x64">
+  <link
+    rel="icon"
+    href="assets/favicon-64.png"
+    type="image/png"
+    sizes="64x64"
+  >
+
   <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" as="image" href="assets/logo-dakkai.webp" type="image/webp">
-  <link rel="preload" as="image" href="assets/dakkai-hero-oficial.webp" type="image/webp" media="(min-width: 601px)">
-  <link rel="preload" as="image" href="assets/dakkai-hero-oficial-mobile.webp" type="image/webp" media="(max-width: 600px)">
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/icon-192.png"
+    type="image/png"
+  >
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/logo-dakkai.webp"
+    type="image/webp"
+  >
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/dakkai-hero-oficial.webp"
+    type="image/webp"
+    media="(min-width: 601px)"
+  >
+
+  <link
+    rel="preload"
+    as="image"
+    href="assets/dakkai-hero-oficial-mobile.webp"
+    type="image/webp"
+    media="(max-width: 600px)"
+  >
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;600&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Correção exclusiva da logo pequena da barra principal -->
+  <style>
+    .site-header .mini-brand.mini-brand-official {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+      gap: 10px !important;
+      width: auto !important;
+      min-width: 0 !important;
+      height: 48px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      background: transparent !important;
+      text-decoration: none !important;
+      line-height: 1 !important;
+      overflow: visible !important;
+      flex-shrink: 0 !important;
+    }
+
+    .site-header .mini-brand.mini-brand-official::before,
+    .site-header .mini-brand.mini-brand-official::after {
+      display: none !important;
+      content: none !important;
+    }
+
+    .site-header .mini-brand-symbol {
+      display: block !important;
+      width: 38px !important;
+      height: 38px !important;
+      min-width: 38px !important;
+      max-width: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      border: 0 !important;
+      border-radius: 50% !important;
+      object-fit: contain !important;
+      object-position: center !important;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.38));
+    }
+
+    .site-header .mini-brand-word {
+      display: block !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      color: #ffffff !important;
+      font-family: "Noto Serif JP", serif !important;
+      font-size: 15px !important;
+      font-weight: 600 !important;
+      line-height: 1 !important;
+      letter-spacing: 0.17em !important;
+      white-space: nowrap !important;
+      text-transform: uppercase !important;
+      text-shadow: 0 3px 12px rgba(0, 0, 0, 0.55);
+    }
+
+    @media (max-width: 600px) {
+      .site-header .mini-brand.mini-brand-official {
+        gap: 8px !important;
+        height: 42px !important;
+      }
+
+      .site-header .mini-brand-symbol {
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+      }
+
+      .site-header .mini-brand-word {
+        font-size: 13px !important;
+        letter-spacing: 0.13em !important;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .site-header .mini-brand-word {
+        font-size: 12px !important;
+        letter-spacing: 0.1em !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <a class="skip-link" href="#principal">Ir para o conteúdo</a>
+  <a class="skip-link" href="#principal">
+    Ir para o conteúdo
+  </a>
 
   <div class="grain" aria-hidden="true"></div>
+
   <header class="site-header" id="inicio">
     <div class="container header-inner">
-      <a class="mini-brand" href="#inicio" aria-label="DAKKAI Sushi — início">
-        <span class="mini-enso" aria-hidden="true"></span>
-        <span>DAKKAI</span>
+
+      <!-- Logo pequena oficial corrigida -->
+      <a
+        class="mini-brand mini-brand-official"
+        href="#inicio"
+        aria-label="DAKKAI Sushi — início"
+      >
+        <img
+          class="mini-brand-symbol"
+          src="assets/icon-192.png"
+          alt=""
+          width="192"
+          height="192"
+          decoding="async"
+          fetchpriority="high"
+        >
+
+        <span class="mini-brand-word">DAKKAI</span>
       </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
-        <span></span><span></span>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+        aria-label="Abrir menu"
+      >
+        <span></span>
+        <span></span>
       </button>
-      <nav class="nav" id="menu-principal" aria-label="Navegação principal">
+
+      <nav
+        class="nav"
+        id="menu-principal"
+        aria-label="Navegação principal"
+      >
         <a href="#essencia">Essência</a>
         <a href="#experiencia">Experiência</a>
         <a href="#galeria">Galeria</a>
         <a href="#contato">Contato</a>
-        <a class="nav-cta" data-action="whatsapp" href="#">Pedir agora</a>
+
+        <a
+          class="nav-cta"
+          data-action="whatsapp"
+          href="#"
+        >
+          Pedir agora
+        </a>
       </nav>
     </div>
   </header>
 
   <main id="principal">
-    <section class="hero" aria-labelledby="titulo-principal">
+
+    <section
+      class="hero"
+      aria-labelledby="titulo-principal"
+    >
       <div class="hero-media" aria-hidden="true"></div>
       <div class="hero-shade" aria-hidden="true"></div>
+
       <div class="container hero-inner">
         <picture class="hero-logo-frame">
-          <source srcset="assets/logo-dakkai.webp" type="image/webp">
-          <img class="hero-logo" src="assets/logo-dakkai.png" alt="DAKKAI Sushi — Brasil Oriente" width="1051" height="767" decoding="async" fetchpriority="high">
-        </picture>
-        <h1 id="titulo-principal" class="sr-only">DAKKAI Sushi — Brasil e Oriente</h1>
-        <p class="hero-copy">Uma experiência japonesa autoral. Precisa, intensa e inesquecível.</p>
+          <source
+            srcset="assets/logo-dakkai.webp"
+            type="image/webp"
+          >
 
-        <div class="link-stack" aria-label="Acessos rápidos">
-          <a class="brush-button" data-action="delivery" href="#"><span>Delivery</span><b aria-hidden="true">↗</b></a>
-          <a class="brush-button" data-action="cardapio" href="#"><span>Cardápio</span><b aria-hidden="true">↗</b></a>
-          <a class="brush-button" data-action="reservas" href="#"><span>Reservas</span><b aria-hidden="true">↗</b></a>
-          <a class="brush-button" data-action="trabalheConosco" href="#"><span>Trabalhe conosco</span><b aria-hidden="true">↗</b></a>
+          <img
+            class="hero-logo"
+            src="assets/logo-dakkai.png"
+            alt="DAKKAI Sushi — Brasil Oriente"
+            width="1051"
+            height="767"
+            decoding="async"
+            fetchpriority="high"
+          >
+        </picture>
+
+        <h1
+          id="titulo-principal"
+          class="sr-only"
+        >
+          DAKKAI Sushi — Brasil e Oriente
+        </h1>
+
+        <p class="hero-copy">
+          Uma experiência japonesa autoral. Precisa, intensa e inesquecível.
+        </p>
+
+        <div
+          class="link-stack"
+          aria-label="Acessos rápidos"
+        >
+          <a
+            class="brush-button"
+            data-action="delivery"
+            href="#"
+          >
+            <span>Delivery</span>
+            <b aria-hidden="true">↗</b>
+          </a>
+
+          <a
+            class="brush-button"
+            data-action="cardapio"
+            href="#"
+          >
+            <span>Cardápio</span>
+            <b aria-hidden="true">↗</b>
+          </a>
+
+          <a
+            class="brush-button"
+            data-action="reservas"
+            href="#"
+          >
+            <span>Reservas</span>
+            <b aria-hidden="true">↗</b>
+          </a>
+
+          <a
+            class="brush-button"
+            data-action="trabalheConosco"
+            href="#"
+          >
+            <span>Trabalhe conosco</span>
+            <b aria-hidden="true">↗</b>
+          </a>
         </div>
 
-        <div class="hero-meta" aria-label="Informações do restaurante">
-          <span data-field="atendimento">Delivery e retirada</span>
+        <div
+          class="hero-meta"
+          aria-label="Informações do restaurante"
+        >
+          <span data-field="atendimento">
+            Delivery e retirada
+          </span>
+
           <i aria-hidden="true"></i>
-          <span data-field="horario">Horários em atualização</span>
+
+          <span data-field="horario">
+            Horários em atualização
+          </span>
+
           <i aria-hidden="true"></i>
-          <span data-field="endereco">Endereço em atualização</span>
+
+          <span data-field="endereco">
+            Endereço em atualização
+          </span>
         </div>
       </div>
-      <a class="scroll-cue" href="#essencia" aria-label="Conhecer o DAKKAI"><span></span></a>
+
+      <a
+        class="scroll-cue"
+        href="#essencia"
+        aria-label="Conhecer o DAKKAI"
+      >
+        <span></span>
+      </a>
     </section>
 
-    <section class="section essence" id="essencia">
+    <section
+      class="section essence"
+      id="essencia"
+    >
       <div class="container two-columns">
-        <div class="section-label"><span>01</span> Essência</div>
+        <div class="section-label">
+          <span>01</span>
+          Essência
+        </div>
+
         <div class="section-content">
           <p class="kicker">Brasil • Oriente</p>
-          <h2>Menos excesso.<br>Mais sabor.</h2>
-          <p class="lead">O DAKKAI traduz a precisão japonesa com uma identidade brasileira própria: ingredientes selecionados, técnica cuidadosa e apresentação limpa.</p>
+
+          <h2>
+            Menos excesso.<br>
+            Mais sabor.
+          </h2>
+
+          <p class="lead">
+            O DAKKAI traduz a precisão japonesa com uma identidade
+            brasileira própria: ingredientes selecionados, técnica
+            cuidadosa e apresentação limpa.
+          </p>
+
           <div class="principles">
-            <article><span>鮮</span><h3>Frescor</h3><p>Ingredientes escolhidos para preservar textura, temperatura e equilíbrio.</p></article>
-            <article><span>技</span><h3>Técnica</h3><p>Cortes precisos, preparo no momento e atenção aos detalhes.</p></article>
-            <article><span>心</span><h3>Experiência</h3><p>Do primeiro contato à última peça, tudo deve parecer simples e especial.</p></article>
+            <article>
+              <span>鮮</span>
+              <h3>Frescor</h3>
+              <p>
+                Ingredientes escolhidos para preservar textura,
+                temperatura e equilíbrio.
+              </p>
+            </article>
+
+            <article>
+              <span>技</span>
+              <h3>Técnica</h3>
+              <p>
+                Cortes precisos, preparo no momento e atenção aos detalhes.
+              </p>
+            </article>
+
+            <article>
+              <span>心</span>
+              <h3>Experiência</h3>
+              <p>
+                Do primeiro contato à última peça, tudo deve parecer
+                simples e especial.
+              </p>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section experience" id="experiencia">
-      <div class="experience-photo" role="img" aria-label="Seleção de sushi preparada com apresentação elegante"></div>
+    <section
+      class="section experience"
+      id="experiencia"
+    >
+      <div
+        class="experience-photo"
+        role="img"
+        aria-label="Seleção de sushi preparada com apresentação elegante"
+      ></div>
+
       <div class="container experience-grid">
         <div class="experience-card">
-          <div class="section-label"><span>02</span> Experiência</div>
+          <div class="section-label">
+            <span>02</span>
+            Experiência
+          </div>
+
           <p class="kicker">Feito no momento</p>
+
           <h2>Seu pedido merece presença.</h2>
-          <p>Escolha seu canal preferido e fale diretamente com a equipe. O site foi preparado para delivery, retirada, reservas e atendimento pelo WhatsApp.</p>
-          <a class="text-link" data-action="whatsapp" href="#">Conversar com o DAKKAI <span>→</span></a>
+
+          <p>
+            Escolha seu canal preferido e fale diretamente com a equipe.
+            O site foi preparado para delivery, retirada, reservas e
+            atendimento pelo WhatsApp.
+          </p>
+
+          <a
+            class="text-link"
+            data-action="whatsapp"
+            href="#"
+          >
+            Conversar com o DAKKAI
+            <span>→</span>
+          </a>
         </div>
       </div>
     </section>
 
-
-    <section class="section official-gallery" id="galeria" aria-labelledby="titulo-galeria">
+    <section
+      class="section official-gallery"
+      id="galeria"
+      aria-labelledby="titulo-galeria"
+    >
       <div class="container gallery-heading">
-        <div class="section-label"><span>03</span> DAKKAI oficial</div>
+        <div class="section-label">
+          <span>03</span>
+          DAKKAI oficial
+        </div>
+
         <div>
-          <p class="kicker">Pratos reais • Identidade verdadeira</p>
-          <h2 id="titulo-galeria">Da nossa mesa<br>para a sua.</h2>
-          <p class="lead">Imagens oficiais do DAKKAI: apresentação autoral, ingredientes selecionados e a atmosfera única entre o mar, o Brasil e o Oriente.</p>
+          <p class="kicker">
+            Pratos reais • Identidade verdadeira
+          </p>
+
+          <h2 id="titulo-galeria">
+            Da nossa mesa<br>
+            para a sua.
+          </h2>
+
+          <p class="lead">
+            Imagens oficiais do DAKKAI: apresentação autoral,
+            ingredientes selecionados e a atmosfera única entre
+            o mar, o Brasil e o Oriente.
+          </p>
         </div>
       </div>
 
       <div class="container gallery-grid">
         <figure class="gallery-card gallery-card-wide">
           <picture>
-            <source srcset="assets/dakkai-galeria-sushi-mar.webp" type="image/webp">
-            <img src="assets/dakkai-galeria-sushi-mar.jpg" alt="Combinado de sushi oficial do DAKKAI servido diante do mar" width="1200" height="1000" loading="lazy" decoding="async">
+            <source
+              srcset="assets/dakkai-galeria-sushi-mar.webp"
+              type="image/webp"
+            >
+
+            <img
+              src="assets/dakkai-galeria-sushi-mar.jpg"
+              alt="Combinado de sushi oficial do DAKKAI servido diante do mar"
+              width="1200"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            >
           </picture>
-          <figcaption><span>01</span> Sushi autoral com a atmosfera do mar</figcaption>
+
+          <figcaption>
+            <span>01</span>
+            Sushi autoral com a atmosfera do mar
+          </figcaption>
         </figure>
 
         <figure class="gallery-card">
           <picture>
-            <source srcset="assets/dakkai-galeria-prato-quente.webp" type="image/webp">
-            <img src="assets/dakkai-galeria-prato-quente.jpg" alt="Seleção quente oficial do DAKKAI com camarões, guioza e acompanhamentos" width="1200" height="1000" loading="lazy" decoding="async">
+            <source
+              srcset="assets/dakkai-galeria-prato-quente.webp"
+              type="image/webp"
+            >
+
+            <img
+              src="assets/dakkai-galeria-prato-quente.jpg"
+              alt="Seleção quente oficial do DAKKAI com camarões, guioza e acompanhamentos"
+              width="1200"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            >
           </picture>
-          <figcaption><span>02</span> Texturas, técnica e sabor</figcaption>
+
+          <figcaption>
+            <span>02</span>
+            Texturas, técnica e sabor
+          </figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section contact" id="contato">
+    <section
+      class="section contact"
+      id="contato"
+    >
       <div class="container contact-grid">
         <div>
-          <div class="section-label"><span>04</span> Contato</div>
-          <p class="kicker">O próximo ritual começa aqui</p>
-          <h2>DAKKAI<br>Sushi.</h2>
+          <div class="section-label">
+            <span>04</span>
+            Contato
+          </div>
+
+          <p class="kicker">
+            O próximo ritual começa aqui
+          </p>
+
+          <h2>
+            DAKKAI<br>
+            Sushi.
+          </h2>
         </div>
+
         <div class="contact-details">
-          <div><small>Atendimento</small><strong data-field="atendimento">Delivery e retirada</strong></div>
-          <div><small>Horários</small><strong data-field="horario">Horários em atualização</strong></div>
-          <div><small>Local</small><strong data-field="endereco">Endereço em atualização</strong></div>
+          <div>
+            <small>Atendimento</small>
+            <strong data-field="atendimento">
+              Delivery e retirada
+            </strong>
+          </div>
+
+          <div>
+            <small>Horários</small>
+            <strong data-field="horario">
+              Horários em atualização
+            </strong>
+          </div>
+
+          <div>
+            <small>Local</small>
+            <strong data-field="endereco">
+              Endereço em atualização
+            </strong>
+          </div>
+
           <div class="contact-links">
-            <a data-action="whatsapp" href="#">WhatsApp</a>
-            <a data-action="instagram" href="#">Instagram</a>
-            <a data-action="maps" href="#">Como chegar</a>
+            <a data-action="whatsapp" href="#">
+              WhatsApp
+            </a>
+
+            <a data-action="instagram" href="#">
+              Instagram
+            </a>
+
+            <a data-action="maps" href="#">
+              Como chegar
+            </a>
           </div>
         </div>
       </div>
@@ -160,20 +568,47 @@
   <footer class="footer">
     <div class="container footer-inner">
       <picture class="footer-logo">
-        <source srcset="assets/logo-dakkai.webp" type="image/webp">
-        <img src="assets/logo-dakkai.png" alt="DAKKAI Sushi" width="1051" height="767" loading="lazy" decoding="async">
+        <source
+          srcset="assets/logo-dakkai.webp"
+          type="image/webp"
+        >
+
+        <img
+          src="assets/logo-dakkai.png"
+          alt="DAKKAI Sushi"
+          width="1051"
+          height="767"
+          loading="lazy"
+          decoding="async"
+        >
       </picture>
-      <p>© <span id="year"></span> DAKKAI Sushi. Brasil • Oriente.</p>
-      <a href="#inicio">Voltar ao topo ↑</a>
+
+      <p>
+        © <span id="year"></span> DAKKAI Sushi. Brasil • Oriente.
+      </p>
+
+      <a href="#inicio">
+        Voltar ao topo ↑
+      </a>
     </div>
   </footer>
 
-  <a class="whatsapp-float" data-action="whatsapp" href="#" aria-label="Falar com o DAKKAI no WhatsApp">
+  <a
+    class="whatsapp-float"
+    data-action="whatsapp"
+    href="#"
+    aria-label="Falar com o DAKKAI no WhatsApp"
+  >
     <span class="pulse"></span>
     WhatsApp
   </a>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
 
   <script src="config.js"></script>
   <script src="script.js"></script>
