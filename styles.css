@@ -1200,3 +1200,101 @@ html {
     transform: none;
   }
 }
+/* =========================================================
+   CORREÇÃO — LOGOS DAKKAI SEMPRE VISÍVEIS
+========================================================= */
+
+/* Logo pequena do cabeçalho */
+.site-header .mini-brand.mini-brand-official {
+  display: inline-flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 1002 !important;
+  transform: none;
+}
+
+.site-header .mini-brand-symbol {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  object-fit: contain !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Logo principal */
+.hero-logo-frame {
+  display: inline-grid !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 10 !important;
+  overflow: visible !important;
+}
+
+.hero-logo-frame picture,
+.hero-logo-frame source {
+  visibility: visible !important;
+}
+
+.hero-logo {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 12 !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Logo do rodapé */
+.footer-logo {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.footer-logo img {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Impede que efeitos cubram a logo principal */
+.hero-logo-frame::before,
+.hero-logo-frame::after {
+  pointer-events: none !important;
+}
+
+.hero-logo-frame::before {
+  z-index: -1 !important;
+}
+
+.hero-logo-frame::after {
+  z-index: 1 !important;
+}
+
+/* Correção celular */
+@media (max-width: 600px) {
+  .site-header .mini-brand-symbol {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+  }
+
+  .hero-logo-frame {
+    width: min(88vw, 520px) !important;
+  }
+
+  .hero-logo {
+    width: 100% !important;
+  }
+}
